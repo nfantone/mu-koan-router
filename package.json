@@ -1,6 +1,6 @@
 {
   "name": "mu-koan-router",
-  "version": "1.0.0-dev",
+  "version": "1.0.0",
   "codename": "Kantian kensho",
   "description": "Dynamic routing and controllers discovery for mu-kōän applications",
   "main": "index.js",
