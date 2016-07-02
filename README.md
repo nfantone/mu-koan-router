@@ -15,9 +15,7 @@ Write your _controllers_ (see below) and place them under a single root director
 ```javascript
 'use strict';
 /**
- * Configures a Koa app and exports a node `http` server.
- *
- * @module server
+ * Configures a Koa app and exports it.
  */
 const Koa = require('koa');
 const router = require('mu-koan-router');
@@ -29,8 +27,8 @@ let app = new Koa();
 // on ./routes directory and configure them
 // under a "/v1" namespace.
 router.declareRoutes(app, {
-    root: path.join(__dirname, 'routes'),
-    prefix: '/v1'
+  root: path.join(__dirname, 'routes'),
+  prefix: '/v1'
 });
 
 // Export the configured application
@@ -38,7 +36,7 @@ module.exports = app;
 ```
 
 
-## Controllers
+### Controllers
 A _controller_ is node module that exports a `function` that receives a `koa-router` instance and declares something on it. All controllers must be defined under a single root directory (but can be nested as needed).
 
 For example,
@@ -73,8 +71,6 @@ module.exports = function(router) {
 };
 
 ```
-
----
 
 ## License
 MIT
