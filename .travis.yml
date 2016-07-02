@@ -9,6 +9,10 @@ branches:
 notifications:
   email:
   - nfantone@gmail.com
+cache:
+  bundler: true
+  directories:
+  - node_modules
 script: npm run validate && ./node_modules/.bin/codecov
 before_script:
 - npm install codecov
