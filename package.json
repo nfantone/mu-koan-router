@@ -1,12 +1,13 @@
 {
   "name": "mu-koan-router",
   "version": "1.0.1-dev",
-  "codename": "Kantian kensho",
+  "codename": "Kantian Kensho",
   "description": "Dynamic routing and controllers discovery for mu-kōän applications",
   "main": "index.js",
   "scripts": {
+    "test": "gulp test",
     "validate": "gulp validate",
-    "test": "gulp test"
+    "coverage": "gulp coverage"
   },
   "repository": {
     "type": "git",
@@ -32,26 +33,26 @@
   "dependencies": {
     "glob": "^7.0.5",
     "koa-router": "^7.0.1",
-    "mu-koan-logger": "^1.0.0"
+    "mu-koan-logger": "^1.0.2"
   },
   "devDependencies": {
-    "eslint": "^3.0.0",
-    "eslint-config-semistandard": "^6.0.2",
-    "eslint-config-standard": "^5.3.1",
-    "eslint-plugin-promise": "^1.3.2",
-    "eslint-plugin-standard": "^1.3.2",
+    "eslint": "^3.2.2",
+    "eslint-config-semistandard": "^7.0.0-beta.0",
+    "eslint-config-standard": "^5.3.5",
+    "eslint-plugin-promise": "^2.0.0",
+    "eslint-plugin-standard": "^2.0.0",
     "gulp": "^3.9.1",
-    "gulp-eslint": "^3.0.0",
+    "gulp-eslint": "^3.0.1",
     "gulp-exit": "0.0.2",
     "gulp-if": "^2.0.1",
     "gulp-istanbul": "^1.0.0",
+    "gulp-codecov": "^2.0.2",
     "gulp-load-plugins": "^1.2.4",
-    "gulp-mocha": "^2.2.0",
-    "gulp-release": "^1.0.6",
-    "gulp-util": "^3.0.7",
+    "gulp-mocha": "^3.0.0",
+    "gulp-release": "^1.0.7",
     "pre-commit": "^1.1.3",
     "run-sequence": "^1.2.2",
-    "should": "^9.0.2"
+    "should": "^10.0.0"
   },
   "pre-commit": [
     "validate"
