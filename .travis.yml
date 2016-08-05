@@ -6,7 +6,7 @@ branches:
   only:
   - master
   - develop
-  - /^v?(\d\.){2}\d$/
+  - /^v?(\\d\\.){2}\\d$/
 notifications:
   email:
   - nfantone@gmail.com
@@ -19,7 +19,7 @@ deploy:
   provider: npm
   email: nfantone@gmail.com
   api_key:
-    secure: IwVmuzI14vnnB62hfh2T1BiTaMihXSh1aII8N/uV11vNlK6ZJfN/hpahxtRV04blhcCjR8FSoUe3c1o+PdcAqSj4kUH60MaiVleNi6WEm6hfaG3cWfaqxnShfX/W0hYT5bP8u/LHZph6LNMO6vsXrD+3oHHqGSBL1tEo3H7rYTnlC0xnPjSx88nvoT+Ks5afmoqn/vab/1TbCcXLE6Bepo/YXYNKphoSft3i2LoxEHXtaIl1f/XovL+cWD+k+jX7uOgxoW8T2fCPygEBDcVKxXXB39GddISO/L+iaipCtwXgO45xCrpMH51PZF318tXnRRzB0qc70/y1zEccDE8EDakezessTNdcJVDCDeDMxvbBsZZ12Se/4X2/qdq9RToCPNhjbtGdfSjGebJJIhhDpoPB0nLS+Z/DnEyAL09WLJKEx2jjgFrkYkY9sfq8XvEXdzlCPar8Fqa+zjijKQLfEoKDz344vVHZMqpwjEfItJdVR4u1vOX2JXwDSLpC3GztEuBLDz4g9+y5JvQof0xLhiRAtr1DLwz9sRLxWDoLs6IRhrp3mJJHc0t00g1MWnjwl5mpvj+EAdHXfoTBP9jJsdX+xBpVlUdt3luZLAoFThwFcNmbzenyTllayNT73q7vY/QpUUGATvpBlhzYiDlZfoY4BlxWljMOdFPgaJwto90=
+    secure: fW4rytvfGHwH+sVwby/AkyyjXFiBOYalSPQHBFB6HMFgHV2x9xtD7MKtsNRkobYjnK0mwU3zcwek9DsCs4/YNUFAUs4x1GkHaDn4Zr+AfY1pHlb85C+w+PIkr2SdhQg9gq2dtnZ35YPkAbmsLw9SXMh7xIUOa2H9jSze0iHx8K9u2M1Ph2DucRfoRC1d0MJUTl1qDLTrRi3cXC4+4CdBv/IwBa35WeFG/L/yHzaN3rAEQBlDZ8Nu+Htl3+/X7gTBkcEFh7s3oIyAGL+qENZmp4ven2muAhOZWdgNvwIPhFTbt1W4RZBHlIToo8h5DXXwx/h4wvWMujVGlVOUgLpHFf8HamYm12kXBZONOBFPHZySO1ETXYYnOc4n1RqdMYj1UPgOXimX0TK5qnBa/bdEg05dBLgu4vQw2uVJtOY/TOVwt25ZnMsEuho0osVQca+4xAaODPKWfGC0/mKO5axHqTTqoZHX/YEzf3QKZgHomdzGPUxlbK29tw9Plt3Oo6RmIVMP7GbxZOSE+RE1ySqKULN9cusbYW6Xc+f+qCeeC2vOOEqLOPe/P+BSFE/x9/1R3Zrjci8L9VlaW7n1VCakTpCUl/48Ltt1r9nShjYD+GhyJhARhLFn98771dFkVSp6W068V5FMLqBM4CABDEjaNUBoLcR1gKWxwTIfjYFxt3U=
   on:
     tags: true
     repo: nfantone/mu-koan-router
