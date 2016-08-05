@@ -6,17 +6,21 @@ branches:
   only:
   - master
   - develop
+  - /^v?(\d\.){2}\d$/
 notifications:
   email:
   - nfantone@gmail.com
-script: npm run validate && ./node_modules/.bin/codecov
-before_script:
-- npm install codecov
+cache:
+  bundler: true
+  directories:
+  - node_modules
+script: npm run validate && npm run coverage
 deploy:
   provider: npm
   email: nfantone@gmail.com
   api_key:
-    secure: Bhp3MBx5LIIA05ab4iH1q+p+GN8od0s+BQ/T8Xy6zF+lOcORfGw+8UhcV3UdCjAF02x35odh9iGdhzVh1eGqmcO8ZJTU7b9glzU02rZbeewlA6ao4rucrLkkyQ6JHUTJbxadpWNVWzQPpH4uMmO3GWIpYCwSXWgQ7UQs45AC8o5j5LcXONrgYowCFN/u0o/0/5aL66zBUV9w0CvRuT1BNXci2aA65MHSbBQhSdwpnzFxwKoFw5FXRGJG/yMfROBpf8fOOAxy75D0aTZte7jFFVtA6SLXrQCtfQBZkBruzMWBWmPl1FA/Z1ITSRyfcF131yfdXCHzNuiqlUM1k6mqBDayh1AY5Yg0T98b/YMhfL716m4c2lS3XX2jbTB3rfccgxwOa0z5SvE1uHbFI+GzR9s8YvIQshw7dhl38y5C7tVdY61V7hPbS3vBDTxzgS7ZO8IkaUUkAbCPjeAW1BbaQjsDrvo6ygVDYgjmOWtiu4iCHkq8T599rb6lqueZP6o/LHfDWKPMq5j8jeTbZlLg7XPBpGNMY46uz1zQiofR/5dcBlBL2F9lQOZc8BvofcP3saDnJkCn0OGHfitGoBJbyctYBsMuQ/iOUHBgwU4xqXPiuBBok31GmwHmGYCVIXcG0js4Q6FyeXvrZbACdOxS3N+JMFzBSNxPbMTf675ce14=
+    secure: IwVmuzI14vnnB62hfh2T1BiTaMihXSh1aII8N/uV11vNlK6ZJfN/hpahxtRV04blhcCjR8FSoUe3c1o+PdcAqSj4kUH60MaiVleNi6WEm6hfaG3cWfaqxnShfX/W0hYT5bP8u/LHZph6LNMO6vsXrD+3oHHqGSBL1tEo3H7rYTnlC0xnPjSx88nvoT+Ks5afmoqn/vab/1TbCcXLE6Bepo/YXYNKphoSft3i2LoxEHXtaIl1f/XovL+cWD+k+jX7uOgxoW8T2fCPygEBDcVKxXXB39GddISO/L+iaipCtwXgO45xCrpMH51PZF318tXnRRzB0qc70/y1zEccDE8EDakezessTNdcJVDCDeDMxvbBsZZ12Se/4X2/qdq9RToCPNhjbtGdfSjGebJJIhhDpoPB0nLS+Z/DnEyAL09WLJKEx2jjgFrkYkY9sfq8XvEXdzlCPar8Fqa+zjijKQLfEoKDz344vVHZMqpwjEfItJdVR4u1vOX2JXwDSLpC3GztEuBLDz4g9+y5JvQof0xLhiRAtr1DLwz9sRLxWDoLs6IRhrp3mJJHc0t00g1MWnjwl5mpvj+EAdHXfoTBP9jJsdX+xBpVlUdt3luZLAoFThwFcNmbzenyTllayNT73q7vY/QpUUGATvpBlhzYiDlZfoY4BlxWljMOdFPgaJwto90=
   on:
     tags: true
     repo: nfantone/mu-koan-router
+    node_js: '5'
