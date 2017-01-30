@@ -1,4 +1,6 @@
 # mu-kōän-router 公案-ルータ
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/nfantone/mu-koan-router.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/nfantone/mu-koan-router.svg?branch=master)](https://travis-ci.org/nfantone/mu-koan-router)
 
 > Automatic routes discovery and declaration for [mu-kōän][1] applications.
