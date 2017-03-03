@@ -1,5 +1,5 @@
 # mu-kōän-router 公案-ルータ
-[![Build Status](https://travis-ci.org/nfantone/mu-koan-router.svg?branch=master)](https://travis-ci.org/nfantone/mu-koan-router) [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/Flet/semistandard)
+[![Greenkeeper badge](https://badges.greenkeeper.io/nfantone/mu-koan-router.svg)](https://greenkeeper.io/) [![Build Status](https://travis-ci.org/nfantone/mu-koan-router.svg?branch=master)](https://travis-ci.org/nfantone/mu-koan-router) [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/Flet/semistandard)
 
 > Automatic route discovery and declaration for [mu-kōän][1] applications.
 
