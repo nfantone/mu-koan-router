@@ -1,9 +1,8 @@
 # mu-kōän-router 公案-ルータ
-[![Build Status](https://travis-ci.org/nfantone/mu-koan-router.svg?branch=master)](https://travis-ci.org/nfantone/mu-koan-router)
+[![Build Status](https://travis-ci.org/nfantone/mu-koan-router.svg?branch=master)](https://travis-ci.org/nfantone/mu-koan-router) [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/Flet/semistandard)
 
-> Automatic routes discovery and declaration for [mu-kōän][1] applications.
+> Automatic route discovery and declaration for [mu-kōän][1] applications.
 
-[![js-semistandard-style](https://cdn.rawgit.com/flet/semistandard/master/badge.svg)](https://github.com/Flet/semistandard)
 
 ```sh
 npm i --save mu-koan-router
