@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/nfantone/mu-koan-router#readme",
   "dependencies": {
-    "glob": "^7.1.1",
+    "glob": "^7.1.6",
     "koa-router": "^7.0.1",
     "mu-koan-logger": "^1.0.2"
   },
